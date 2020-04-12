@@ -1,0 +1,147 @@
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.0;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+h4 {
+  font-size: 18px;
+  color: #004E9A;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  color: #062E4D;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800
+  
+}
+
+tr:nth-child(odd) {
+	background-color: #EAEAEA;
+}
+
+th {
+	background-color: #428cd4;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+  	letter-spacing: 1.5px;
+}
+
+table, td, th {
+	text-align: justify;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+table {border-collapse: collapse;}
+
+.footer {
+  background-color: #F2F2F2;
+  text-align: left;
+  padding-bottom: 10px;
+}
+#copyright {
+	text-align: center;
+}
+
+.footer ul li{
+  display: inline;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+a:link {
+  color: #015C92;
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: #8A8989;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BCE6FF;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+img {
+	float: none;
+	border: 1px solid #ffffff;
+    padding: 0.25em;
+    background-color: #ffffff;
+}
+
+.main-head {
+	font-size: 22px;
+	  letter-spacing: 3px;
+	  text-transform: uppercase;
+	
+}
+
+{box-sizing: border-box;}
+  
+	.wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+   aside ul {
+        list-style: none;
+        margin: 2;
+        padding: 0;
+    }
+
+.main-aside {
+        grid-area: sidebar;
+	background-color: #bce6ff;
+	padding: 20px;
+    }
+
+    .information {
+        grid-area: content;
+    }
+
+    .main-head {
+      grid-area: header;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer  footer  footer";
+    }
